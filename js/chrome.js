@@ -10,12 +10,12 @@
   if (header) {
     header.innerHTML = `
       <div class="nav">
-        <a class="brand" href="${root}/index.html">
-          <img src="${root}/assets/icon.png" alt="" width="40" height="40" />
+        <a class="brand" href="${root}/">
+          <img src="${root}/assets/icon.png" alt="Tarot Match" width="40" height="40" />
           TAROT MATCH
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="${root}/index.html" class="${page === 'home' ? 'is-active' : ''}">Home</a>
+          <a href="${root}/" class="${page === 'home' ? 'is-active' : ''}">Home</a>
           <a href="${root}/support/" class="${page === 'support' ? 'is-active' : ''}">Support</a>
           <a href="${root}/privacy/" class="${page === 'privacy' ? 'is-active' : ''}">Privacy</a>
           <a href="mailto:${site.email}">Mail</a>
