@@ -2,7 +2,7 @@
   const rootAttr = document.documentElement.getAttribute('data-root') || '.';
   const root = rootAttr.replace(/\/$/, '');
   const page = document.documentElement.getAttribute('data-page') || '';
-  const site = window.TAROT_MATCH || { name: 'Tarot Memory', email: 'bohdankvtdev@gmail.com', year: 2026 };
+  const site = window.TAROT_MATCH || { name: 'Tarot Memory: Card Match', email: 'bohdankvtdev@gmail.com', year: 2026 };
 
   const header = document.querySelector('[data-header]');
   const footer = document.querySelector('[data-footer]');
@@ -12,7 +12,10 @@
       <div class="nav">
         <a class="brand" href="${root}/">
           <img src="${root}/assets/icon.png" alt="${site.name}" width="40" height="40" />
-          ${site.name.toUpperCase()}
+          <span class="brand-text">
+            <span>TAROT MEMORY</span>
+            <span class="brand-sub">Card Match</span>
+          </span>
         </a>
         <nav class="nav-links" aria-label="Primary">
           <a href="${root}/" class="${page === 'home' ? 'is-active' : ''}">Home</a>

@@ -126,6 +126,27 @@ a:hover {
   font-size: 0.82rem;
 }
 
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  letter-spacing: 0.22em;
+}
+
+.brand-sub {
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+}
+
+.title-sub {
+  margin: -8px 0 16px;
+  color: var(--accent);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
 .brand img {
   width: 40px;
   height: 40px;
