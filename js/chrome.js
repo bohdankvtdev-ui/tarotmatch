@@ -2,7 +2,7 @@
   const rootAttr = document.documentElement.getAttribute('data-root') || '.';
   const root = rootAttr.replace(/\/$/, '');
   const page = document.documentElement.getAttribute('data-page') || '';
-  const site = window.TAROT_MATCH || { name: 'Tarot Match', email: 'hello@tarotmatch.app', year: 2026 };
+  const site = window.TAROT_MATCH || { name: 'Tarot Match', email: 'bohdankvtdev@gmail.com', year: 2026 };
 
   const header = document.querySelector('[data-header]');
   const footer = document.querySelector('[data-footer]');
