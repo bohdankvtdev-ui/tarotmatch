@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-root="." data-page="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tarot Match — memory matching with a full tarot deck</title>
+    <meta
+      name="description"
+      content="Tarot Match is a quiet memory game. Flip, remember, and pair a full 78-card tarot deck. Not fortune-telling."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <canvas id="starfield"></canvas>
+    </div>
+    <div class="cards-sky" data-fly aria-hidden="true"></div>
+
+    <div class="wrap">
+      <header data-header></header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="kicker">iPhone &amp; iPad · free to play</p>
+            <h1>TAROT MATCH</h1>
+            <p class="lede">
+              Flip two cards. Remember the art. Match The Moon, the courts, and every pip in a full
+              78-card deck. A calm memory puzzle that teaches the cards as you play.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" data-app-store href="#download">App Store</a>
+              <a class="btn btn-ghost" href="support/">Support</a>
+              <a class="btn btn-ghost" href="privacy/">Privacy</a>
+            </div>
+          </div>
+          <div class="hero-stage" aria-hidden="true">
+            <div class="pair-glow"></div>
+            <div class="pair pair-left">
+              <img src="assets/cards/18_the_moon.png" alt="" />
+            </div>
+            <div class="pair pair-right">
+              <img src="assets/cards/18_the_moon.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="play">
+          <h2>How it plays</h2>
+          <p class="sub">Classic memory match, tuned to the tarot — not a reading app.</p>
+          <div class="grid-3">
+            <article class="card-panel">
+              <h3>Match</h3>
+              <p>Two cards at a time. Pair the same identity to clear the board and climb levels.</p>
+            </article>
+            <article class="card-panel">
+              <h3>Learn</h3>
+              <p>A full 78-card structure: 22 Major Arcana and 56 Minor Arcana across four suits.</p>
+            </article>
+            <article class="card-panel">
+              <h3>Remember</h3>
+              <p>Cards you miss come back. A Deck journal keeps what you have learned on this device.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="try">
+          <h2>Find the pair</h2>
+          <p class="sub">A tiny board with two pairs. Tap a card, then find its twin.</p>
+          <div class="board" data-board></div>
+        </section>
+
+        <section class="section" id="deck">
+          <h2>From the deck</h2>
+          <p class="sub">Pixel tarot art used in the game — majors, courts, and the card back.</p>
+          <div class="gallery">
+            <figure>
+              <img src="assets/cards/0_the_fool.png" alt="The Fool" />
+              <figcaption>The Fool</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/1_the_magician.png" alt="The Magician" />
+              <figcaption>The Magician</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/2_high_priestess.png" alt="The High Priestess" />
+              <figcaption>High Priestess</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/17_the_star.png" alt="The Star" />
+              <figcaption>The Star</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/19_the_sun.png" alt="The Sun" />
+              <figcaption>The Sun</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/21_the_world.png" alt="The World" />
+              <figcaption>The World</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/6_the_lovers.png" alt="The Lovers" />
+              <figcaption>The Lovers</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/ace_of_cups.png" alt="Ace of Cups" />
+              <figcaption>Ace of Cups</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/queen_of_wands.png" alt="Queen of Wands" />
+              <figcaption>Queen of Wands</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/king_of_pentacles.png" alt="King of Pentacles" />
+              <figcaption>King of Pentacles</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/22_card_back.png" alt="Card back" />
+              <figcaption>Card back</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/cards/18_the_moon.png" alt="The Moon" />
+              <figcaption>The Moon</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section" id="download">
+          <h2>On the App Store</h2>
+          <p class="sub">
+            Free to play, supported by two banner ads. Tracking is optional. Progress stays on your
+            device. The app does not predict the future.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" data-app-store href="#download">Get Tarot Match</a>
+            <a class="btn btn-ghost" href="mailto:hello@tarotmatch.app" data-email>hello@tarotmatch.app</a>
+          </div>
+          <div class="note">
+            Apple requires a working Privacy Policy and Support page. After you host this folder,
+            set those URLs in App Store Connect and in the app <code>.env</code>:
+            <code>/privacy</code> and <code>/support</code>.
+          </div>
+        </section>
+      </main>
+
+      <footer data-footer></footer>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/chrome.js"></script>
+    <script src="js/sky.js"></script>
+    <script src="js/board.js"></script>
+  </body>
+</html>
